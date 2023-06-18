@@ -15,14 +15,52 @@
 </head>
 
 <style>
-    .profile-badge {
-        text-align: center;
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h1 {
         margin-bottom: 20px;
     }
 
-    .profile-badge img {
-        width: 150px;
-        border-radius: 50%;
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #555;
     }
 </style>
 
@@ -86,71 +124,31 @@
 
     <main class="page-content">
         <div class="posts-list">
-            <div class="box filter-list">
-
-                <div class="filter">
-                    <i class="fas fa-fire"></i>
-                    <p>Hot</p>
+            <form id="create-post-form">
+                <div class="form-group">
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" name="post-title" placeholder="Enter post title" required>
                 </div>
-                <div class="filter">
-                    <form>
-                        <select name="cars" id="cars">
-                            <option value="India">India</option>
-                            <option value="America">America</option>
-                            <option value="Japan">Japan</option>
-                            <option value="Russia">Russia</option>
-                        </select>
-                    </form>
+                <div class="form-group">
+                    <label for="post-content">Content:</label>
+                    <textarea id="post-content" name="post-content" placeholder="Write your post content"
+                        required></textarea>
                 </div>
-                <div class="filter">
-                    <i class="fa fa-bullseye"></i>
-                    <p>New</p>
+                <div class="form-group">
+                    <label for="post-category">Category:</label>
+                    <select id="post-category" name="post-category" required>
+                        <option value="">Select a category</option>
+                        <option value="technology">Technology</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="food">Food</option>
+                        <option value="travel">Travel</option>
+                    </select>
                 </div>
-                <div class="filter">
-                    <i class='fas fa-award'></i>
-                    <p>Top</p>
+                <div class="form-group">
+                    <button onclick="createpost()" type="submit">Create Post</button>
                 </div>
+            </form>
 
-            </div>
-            <!-- list of posts -->
-
-            <div class="posts">
-
-                <div class="post-content">
-                    <p>You haven't posted yet</p>
-                    <div id="create">
-                        <h2><button>How to create a post</button></h2>
-                    </div>
-                    <br>
-
-                    <button><a href="createpost.html">Create Post</a></button>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- side menu -->
-        <aside class="side-menu">
-            <aside>
-                <div class="profile-badge">
-                    <img src="reddit-logo.png" alt="Profile Picture">
-                    <h2>John Doe</h2>
-                </div>
-                <div class="engagements">
-                    <h3>Engagements</h3>
-                    <ul>
-                        <li class="engagement-item">Posts: 10</li>
-                        <li class="engagement-item">Comments: 25</li>
-                        <li class="engagement-item">Upvotes: 50</li>
-                    </ul>
-                </div>
-            </aside>
-        </aside>
-
-        <a id="scroll-up" class="button scroll-up" onclick="scrollToTop()">
-            <i class="fas fa-rocket"></i>
-            <p>Scroll to top</p>
-        </a>
 
         </div>
     </main>
@@ -158,20 +156,22 @@
 
     <script src="script.js"></script>
     <script>
-        $(document).ready(function () {
-            $("button").click(function () {
-                $("#create").load("create.txt");
-            });
-        });
-
-        function togglePopup() {
-            $(".content").toggle();
+        function createpost() {
+            let text = "Press a button\n Click Ok to submit or Cancel if you are not sure.";
+            if (confirm(text) == true) {
+                text = "You pressed OK!";
+            } else {
+                text = "You canceled!";
+            }
+            document.getElementById("demo").innerHTML = text;
         }
 
         function downloadapp() {
             var myWindow = window.open("", "", "width=500, height=500");
             myWindow.blur();
         }
+
+
     </script>
 </body>
 

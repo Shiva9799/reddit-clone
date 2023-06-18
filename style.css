@@ -290,6 +290,7 @@ header .search-bar {
 .get-app {
     background-color: #D7DADC;
     color: black;
+    cursor: pointer;
 }
 
 .log-in {
@@ -839,4 +840,8 @@ input:checked + .slider:before {
     color: white;
     border-radius: 50%;
     padding: 4px;
+}
+
+.greet{
+    color: orange;
 }
