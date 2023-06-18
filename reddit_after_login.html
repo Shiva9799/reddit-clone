@@ -346,30 +346,6 @@
     </div>
 
     <script src="script.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("button").click(function () {
-                $.get("demo.asp", function (data, status) {
-                    alert("Data: " + data + "\nStatus: " + status);
-                });
-            });
-        });
-
-        function togglePopup() {
-            $(".content").toggle();
-        }
-
-        function downloadapp() {
-            var myWindow = window.open("", "", "width=500, height=500");
-            myWindow.blur();
-        }
-
-        const myTimeout = setTimeout(myGreeting, 2000);
-
-        function myGreeting() {
-            document.getElementById("greet").innerHTML = "Nice to see you here"
-        }
-    </script>
 </body>
 
 </html>
