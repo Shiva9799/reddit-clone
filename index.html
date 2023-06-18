@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a class="logo" href="/">
+            <img src="reddit-logo.png">
+        </a>
+        <h1 class="page-title">Reddit</h1>
+
+        <!-- search -->
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input class="input" type="text" placeholder="Search Reddit">
+        </div>
+        <div class="nav-side">
+            <li class="get-app">Get App</li>
+            <li class="log-in"><a href="#popup2">Log In</a></li>
+            <li class="log-in"><a href="#popup1">Sign Up</a></li>
+            <li><i class='fas fa-user-alt'></i>
+            </li>
+        </div>
+
+    </header>
+
+    <!-- Side Nav -->
+
+    <div class="sidenav">
+        <div class="nav-head">
+            <h5>Feed</h5>
+            <a href="#"><i class="fa fa-home"></i> Home</a>
+            <a href="#"><i class='far fa-arrow-alt-circle-up'></i> Popular</a>
+        </div>
+        <div class="nav-mid">
+            <h5>Topics</h5>
+            <details>
+                <summary>Gaming</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+            <details>
+                <summary>Sports</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+            <details>
+                <summary>Business, Economics</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+            <details>
+                <summary>Crypto</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+            <details>
+                <summary>Television</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+            <details>
+                <summary>Celebrity</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+            <details>
+                <summary>More Details</summary>
+                <div class="nav-category">
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                    <a href="https://www.reddit.com/">abc</a>
+                </div>
+            </details>
+        </div>
+
+        <div id="loginpopup" class="nav-bottom">
+            Create an account to follow your favorite communities and start taking part in conversations.
+            <button>Join Reddit</button>
+        </div>
+    </div>
+
+
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <!-- <center><h2>Sign Up</h2></center> -->
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <center><h2>Sign Up</h2></center>
+                <form id="#signup">
+                    <label for="email"><b>Email</b></label>
+                    <input class="inputs"  type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input class="inputs" type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input class="inputs" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                    <label>
+                        <input class="inputs" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <!-- <button  class="btns" type="button" class="cancelbtn">Cancel</button> -->
+                        <button class="btns" type="submit" class="signupbtn"><a href="reddit_after_login.html">Sign Up</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup2" class="overlay">
+        <div class="popup">
+            <!-- <center><h2>Sign Up</h2></center> -->
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <center><h2>Log In</h2></center>
+                <form id="#signup">
+                    <label for="email"><b>Email</b></label>
+                    <input class="inputs"  type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input class="inputs" type="password" placeholder="Enter Password" name="psw" required>
+                    
+
+                    <div class="clearfix">
+                        <!-- <button  class="btns" type="button" class="cancelbtn">Cancel</button> -->
+                        <button class="btns" type="submit" class="signupbtn"><a href="reddit_after_login.html">Log In</a></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <main class="page-content">
+        <div class="posts-list">
+            <div class="box filter-list">
+
+                <div class="filter">
+                    <i class="fas fa-fire"></i>
+                    <p>Hot</p>
+                </div>
+                <div class="filter">
+                    <form>
+                        <select name="cars" id="cars">
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Russia">Russia</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="filter">
+                    <i class="fa fa-bullseye"></i>
+                    <p>New</p>
+                </div>
+                <div class="filter">
+                    <i class='fas fa-award'></i>
+                    <p>Top</p>
+                </div>
+
+            </div>
+            <!-- list of posts -->
+
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">s/shivamkumar</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">
+                        <p>This Clone is made by Shivam Kumar as assignment of week 1.</p>
+                        <p>Copyrighted by Shivam Kumar</p>
+                        <center><img src="reddit-logo.png" alt=""></center>
+                    </div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">username</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque hic
+                        maxime praesentium
+                        quaerat, iure culpa deserunt eos modi ab, quas animi pariatur itaque quidem fugit? Quae maiores
+                        corporis incidunt!
+                        Sequi vel ad, ut repudiandae magnam numquam aliquid sapiente eveniet necessitatibus excepturi
+                        dolore sit, aperiam ullam cumque optio veniam delectus quam iste pariatur reprehenderit
+                        distinctio ducimus veritatis iusto! Tenetur, vitae?</div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">username</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque hic
+                        maxime praesentium
+                        quaerat, iure culpa deserunt eos modi ab, quas animi pariatur itaque quidem fugit? Quae maiores
+                        corporis incidunt!
+                        Sequi vel ad, ut repudiandae magnam numquam aliquid sapiente eveniet necessitatibus excepturi
+                        dolore sit, aperiam ullam cumque optio veniam delectus quam iste pariatur reprehenderit
+                        distinctio ducimus veritatis iusto! Tenetur, vitae?</div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">username</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque hic
+                        maxime praesentium
+                        quaerat, iure culpa deserunt eos modi ab, quas animi pariatur itaque quidem fugit? Quae maiores
+                        corporis incidunt!
+                        Sequi vel ad, ut repudiandae magnam numquam aliquid sapiente eveniet necessitatibus excepturi
+                        dolore sit, aperiam ullam cumque optio veniam delectus quam iste pariatur reprehenderit
+                        distinctio ducimus veritatis iusto! Tenetur, vitae?</div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">username</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque hic
+                        maxime praesentium
+                        quaerat, iure culpa deserunt eos modi ab, quas animi pariatur itaque quidem fugit? Quae maiores
+                        corporis incidunt!
+                        Sequi vel ad, ut repudiandae magnam numquam aliquid sapiente eveniet necessitatibus excepturi
+                        dolore sit, aperiam ullam cumque optio veniam delectus quam iste pariatur reprehenderit
+                        distinctio ducimus veritatis iusto! Tenetur, vitae?</div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">username</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque hic
+                        maxime praesentium
+                        quaerat, iure culpa deserunt eos modi ab, quas animi pariatur itaque quidem fugit? Quae maiores
+                        corporis incidunt!
+                        Sequi vel ad, ut repudiandae magnam numquam aliquid sapiente eveniet necessitatibus excepturi
+                        dolore sit, aperiam ullam cumque optio veniam delectus quam iste pariatur reprehenderit
+                        distinctio ducimus veritatis iusto! Tenetur, vitae?</div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="upvote">
+                    <i class='far fa-arrow-alt-circle-up'></i>
+                    <p>568</p>
+                    <i class='far fa-arrow-alt-circle-down'></i>
+                </div>
+                <div class="post-content">
+                    <div class="username">
+                        <a href="#">username</a>
+                        <button>Join</button>
+                    </div>
+                    <div class="post-img">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore atque hic
+                        maxime praesentium
+                        quaerat, iure culpa deserunt eos modi ab, quas animi pariatur itaque quidem fugit? Quae maiores
+                        corporis incidunt!
+                        Sequi vel ad, ut repudiandae magnam numquam aliquid sapiente eveniet necessitatibus excepturi
+                        dolore sit, aperiam ullam cumque optio veniam delectus quam iste pariatur reprehenderit
+                        distinctio ducimus veritatis iusto! Tenetur, vitae?</div>
+                    <div class="post-reach">
+                        <a href="#">Comments</a>
+                        <a href="#">Share</a>
+                        <a href="#">Save</a>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- side menu -->
+        <aside class="side-menu">
+            <div id="side-menu-container">
+                <!-- subreddits -->
+                <div class="box subreddits-list">
+                    <ul></ul>
+                    <details open>
+                        <summary>POPULAR COMMUNITIES</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>GAMING</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>SPORTS</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>TV</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>TRAVEL</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>HEALTH & FITNESS</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>FASHION</summary>
+                        <div class="faq__content">
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                            <a href="https://www.reddit.com/">abc</a>
+                        </div>
+                    </details>
+
+                </div>
+
+            </div>
+        </aside>
+
+        </div>
+    </main>
+</body>
+
+</html>
