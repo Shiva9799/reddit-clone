@@ -171,6 +171,7 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
+        display: none;
     }
 
     .sidenav a {
@@ -272,6 +273,11 @@ header .page-title {
     margin: 0;
 }
 
+header .page-title a{
+    color: white;
+    text-decoration: none;
+}
+
 header .search-bar {
     display: flex;
     gap: 10px;
@@ -313,8 +319,10 @@ header .search-bar {
 
 .nav-side li {
     list-style-type: none;
-    margin: 1em;
+    margin: 0.2em;
 }
+
+
 
 
 /* div accordian */
@@ -740,6 +748,10 @@ hr {
     .signupbtn {
         width: 100%;
     }
+
+    .sidenav{
+        display: none;
+    }
 }
 
 
@@ -816,7 +828,7 @@ input:checked + .slider:before {
 	transform: translateX(1rem);
 }
 
-.content {
+/* .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -829,8 +841,8 @@ input:checked + .slider:before {
     padding: 10px;
     z-index: 100;
     display: none;
-    /*to hide popup initially*/
-}
+    to hide popup initially
+} */
   
 .close-btn {
     position: absolute;
@@ -845,3 +857,68 @@ input:checked + .slider:before {
 .greet{
     color: orange;
 }
+
+/* contact us css */
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    margin-top: 20em;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 9px;
+    box-shadow: 4px 4px 2px rgba(254,236,164,1); 
+  }
+  
+  .wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #332902;
+  }
+  
+  .wrapper .input_field{
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+    border: 1px solid orange;
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+  }
+  
+  .wrapper textarea{
+    resize: none;
+    height: 80px;
+  }
+  
+  .wrapper .btn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 20%;
+    background: orangered;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  #error_message{
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }

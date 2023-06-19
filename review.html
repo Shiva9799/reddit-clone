@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="script" href="script.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</head>
+
+<style>
+    ul li {
+        margin: 2em;
+        width: 100%;
+        position: relative;
+        padding: 12px 8px 12px 40px;
+        list-style-type: none;
+        font-size: 18px;
+        transition: 0.2s;
+        border: 1px orange solid;
+        border-radius: 9px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .header {
+        padding: 30px 40px;
+        color: white;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    input {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        width: 75%;
+        padding: 10px;
+        float: left;
+        font-size: 16px;
+    }
+
+    .addBtn {
+        padding: 10px;
+        width: 25%;
+        background: peru;
+        color: blanchedalmond;
+        float: left;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 0;
+    }
+
+    .addBtn:hover {
+        background-color: orange;
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header>
+        <a class="logo" href="/">
+            <img src="reddit-logo.png">
+        </a>
+        <h1 class="page-title"><a href="reddit_after_login.html">Reddit</a></h1>
+
+        <!-- search -->
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input class="input" type="text" placeholder="Search Reddit">
+        </div>
+        <div class="nav-side">
+            <li onclick="downloadapp()" class="get-app">Get App</li>
+            <li class="log-in">Advertise</li>
+            <li class="log-in"><a href="contactus.html">Contact Us</a></li>
+            <li class="log-in"><a href="review.html">Reviews</a></li>
+            <li class="log-in"><i class='fas fa-user-alt'></i><a href="profile.html">Profile</a></li>
+
+        </div>
+
+    </header>
+
+    <!-- Side Nav -->
+
+    <div class="sidenav">
+        <br>
+        <div class="search-bar">
+            <input class="input" type="text" placeholder="Filter">
+        </div>
+
+        <div class="nav-top-head">
+            <h5>Feed</h5>
+            <a href="#"> Create Community</a>
+            <a href="#"> r/webdev</a>
+            <a href="#">s/shivamkumar</a>
+            <a href="#"> r/announcements</a>
+        </div>
+        <div class="nav-head">
+            <h5>Feed</h5>
+            <a href="#"><i class="fa fa-home"></i> Home</a>
+            <a href="#"><i class='far fa-arrow-alt-circle-up'></i> Popular</a>
+            <a href="#"><i class='fa fa-bar-chart'></i> All</a>
+        </div>
+        <div class="nav-mid">
+            <h5>Others</h5>
+            <a href="#">User Settings</a>
+            <a href="#">Messages</a>
+            <a href="#">Create Post</a>
+            <a href="#">Notifications</a>
+            <a href="#">Coins</a>
+            <a href="#">Premium</a>
+            <a href="#">Avatar</a>
+        </div>
+
+
+    </div>
+
+
+    <main class="page-content">
+        <div class="posts-list">
+            <div id="myDIV" class="header">
+                <h2 style="margin:15px">Reviews from the User</h2>
+                <input type="text" id="myInput" placeholder="Write your Review...">
+                <span onclick="newElement()" class="addBtn">Submit</span>
+            </div>
+
+            <ul id="myUL">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illum enim quae dolores reiciendis id, corrupti, nulla est consequatur atque alias magni maiores inventore quisquam at deserunt cum doloremque? Nobis.</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, magni officiis quidem temporibus explicabo accusantium, in porro quo ut possimus laborum aut? Dolores quas aliquam odit asperiores, accusamus a in?</li>
+                
+            </ul>
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
